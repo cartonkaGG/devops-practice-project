@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Тут можна додати команди збірки, наприклад: sh 'make build'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Тут можна додати тестування, наприклад: sh 'make test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Тут можна додати команди для деплойменту
+            }
+        }
+    }
+}
